@@ -11,10 +11,19 @@ Node-skript utan externa paket.
 - **Utseende (färger, typsnitt):** `public/css/style.css`
 - **Sidmallar och sidornas uppbyggnad:** `build.mjs`
 
+Det som återstår att ta fram inför lanseringen finns i `INNEHALL.md`.
+
 ## Bilder
 
-Lägg nya bilder i `bilder-inkorg/` (se `bilder-inkorg/LÄSMIG.md`). De
-komprimeras och läggs in under `public/img/`.
+Lägg nya bilder i `bilder-inkorg/` (se `bilder-inkorg/LÄSMIG.md`). Förbered
+dem för webben med
+
+```sh
+python3 scripts/bilder.py bilder-inkorg/foto.jpg public/img/foto.jpg
+```
+
+Skriptet roterar, skalar ner, tar bort metadata (t.ex. GPS) och sparar
+bildens mått i `src/bilder.json`. Skriv sedan in sökvägen i `src/site.mjs`.
 
 ## Köra lokalt
 
@@ -22,8 +31,17 @@ Kräver Node 20 eller senare.
 
 ```sh
 npm run build   # bygger sajten till dist/
+npm run check   # letar efter trasiga länkar och bilder i dist/
 npm run dev     # bygger och visar den på http://localhost:4321
 ```
+
+GitHub kör `build` och `check` automatiskt vid varje push.
+
+## Testlänk
+
+Med repot kopplat till Netlify får varje push en egen testlänk. Testlänkar
+visas inte på Google (de får `noindex` och en spärrande robots.txt). Bara den
+riktiga domänen www.skarabygdensel.se indexeras.
 
 ## Publicering
 

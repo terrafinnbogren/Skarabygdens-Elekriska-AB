@@ -5,9 +5,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
-import { company, recruiting, services, staff, references } from './src/site.mjs';
+import { company, recruiting, images, services, staff, references, faq } from './src/site.mjs';
 
 const OUT = 'dist';
+
+// Netlify sätter URL till sajtens adress. Allt som inte är den riktiga domänen
+// (testlänkar, förhandsvisningar, lokalt) ska inte synas på Google.
+const isProduction = (process.env.URL || '').includes('skarabygdensel.se') && process.env.CONTEXT === 'production';
+
+const imageSizes = JSON.parse(fs.readFileSync('src/bilder.json', 'utf8'));
 
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -31,6 +37,13 @@ const icons = {
   pin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
 };
+
+// Bilder förbereds med scripts/bilder.py som sparar måtten i src/bilder.json.
+function img(src, alt, { cls = '', lazy = true } = {}) {
+  const size = imageSizes[src];
+  if (!size) throw new Error(`${src} saknas i src/bilder.json – kör scripts/bilder.py`);
+  return `<img src="${src}" alt="${esc(alt)}" width="${size.width}" height="${size.height}"${cls ? ` class="${cls}"` : ''}${lazy ? ' loading="lazy"' : ''}>`;
+}
 
 const icon = (name, cls = 'icon') =>
   `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
@@ -59,14 +72,17 @@ function layout({ path: current, title, description, body, head = '', noindex = 
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${company.url}${current}">
-${noindex ? '<meta name="robots" content="noindex">\n' : ''}<meta property="og:type" content="website">
+${noindex || !isProduction ? '<meta name="robots" content="noindex">\n' : ''}<meta property="og:type" content="website">
 <meta property="og:locale" content="sv_SE">
 <meta property="og:site_name" content="${esc(company.shortName)}">
 <meta property="og:title" content="${esc(fullTitle)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${company.url}${current}">
+<meta property="og:image" content="${company.url}/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#bd1d1d">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/style.css">
 <script>document.documentElement.classList.remove('no-js')</script>
 ${head}</head>
@@ -108,7 +124,10 @@ ${body}
       </ul>
     </div>
   </div>
-  <div class="container footer-bottom">© ${new Date().getFullYear()} ${esc(company.name)}</div>
+  <div class="container footer-bottom">
+    <span>© ${new Date().getFullYear()} ${esc(company.name)}</span>
+    <a href="/integritetspolicy/">Integritetspolicy</a>
+  </div>
 </footer>
 <script>
   const t = document.querySelector('.menu-toggle');
@@ -192,7 +211,7 @@ pages.push({
   description: `${company.shortName} utför elinstallationer, service, tele/data/larm, fiber och termografi åt privatpersoner och företag i Skara och hela Skaraborg.`,
   head: `<script type="application/ld+json">${JSON.stringify(localBusiness)}</script>\n`,
   body: `
-<section class="hero">
+<section class="hero${images.hero ? ' hero-photo' : ''}"${images.hero ? ` style="--hero-image: url('${images.hero}')"` : ''}>
   <div class="container hero-inner">
     <p class="eyebrow">${company.shortName}</p>
     <h1>Elektriker i Skara och hela Skaraborg</h1>
@@ -229,6 +248,14 @@ ${
 </section>
 <section class="section">
   <div class="container">
+    <div class="section-head"><h2>Vanliga frågor</h2></div>
+    <div class="faq">
+      ${faq.map((f) => `<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="container">
     <div class="section-head">
       <h2>Några av våra kunder</h2>
       <p><a href="/referenser/">Se fler referenser</a></p>
@@ -261,7 +288,7 @@ for (const s of services) {
 ${pageHeader(s.title, s.summary)}
 <section class="section">
   <div class="container with-aside">
-    <div class="prose">${s.body}</div>
+    <div class="prose">${s.image ? img(s.image.src, s.image.alt, { cls: 'prose-image', lazy: false }) : ''}${s.body}</div>
     <aside class="aside-box">
       <h2>Nyfiken på mer?</h2>
       <p>Kontakta oss så berättar vi mer eller lämnar ett kostnadsförslag.</p>
@@ -295,6 +322,7 @@ pages.push({
 ${pageHeader('Om oss', 'Ett lokalt elföretag med lång erfarenhet.')}
 <section class="section">
   <div class="container prose">
+    ${images.about ? img(images.about.src, images.about.alt, { cls: 'prose-image', lazy: false }) : ''}
     <p>Med många års erfarenhet inom elbranschen och gediget kunnande utför vi idag de flesta typer av elinstallationer. Vi utgår från våra lokaler på ${company.street.replace(/ \d+$/, '')} i ${company.city}, och idag är vi ${staff.length} medarbetare.</p>
     <p>Vi har en stark lokal förankring och arbetar alltid i nära samarbete med kunden. Våra kunder är allt från privatpersoner till större företag, och vi arbetar för en hög kundnöjdhet.</p>
     <p>Vi är medlemmar i Installatörsföretagen (tidigare EIO, Elektriska installatörsorganisationen).</p>
@@ -332,6 +360,7 @@ ${pageHeader('Kontakta oss', 'Ring, mejla eller använd formuläret – vi åter
       <input id="f-telefon" name="telefon" type="tel" autocomplete="tel">
       <label for="f-meddelande">Meddelande</label>
       <textarea id="f-meddelande" name="meddelande" rows="6" required></textarea>
+      <p class="form-note">Vi använder dina uppgifter bara för att svara dig. Läs mer i vår <a href="/integritetspolicy/">integritetspolicy</a>.</p>
       <button class="btn btn-primary" type="submit">Skicka</button>
     </form>
   </div>
@@ -343,13 +372,39 @@ ${pageHeader('Kontakta oss', 'Ring, mejla eller använd formuläret – vi åter
       ${staff
         .map(
           (p) => `<li>
-        <h3>${esc(p.name)}</h3>
+        ${p.photo ? img(p.photo, p.name, { cls: 'staff-photo' }) : ''}
+        <h3>${esc(p.name)}</h3>${p.role ? `<p class="staff-role">${esc(p.role)}</p>` : ''}
         ${p.phone ? `<a href="tel:${tel(p.phone)}">${icon('phone')}${p.phone}</a>` : ''}
         <a href="mailto:${p.email}">${icon('mail')}${p.email}</a>
       </li>`,
         )
         .join('')}
     </ul>
+  </div>
+</section>`,
+});
+
+pages.push({
+  path: '/integritetspolicy/',
+  title: 'Integritetspolicy',
+  description: `Så behandlar ${company.shortName} dina personuppgifter.`,
+  body: `
+${pageHeader('Integritetspolicy', 'Så behandlar vi dina personuppgifter.')}
+<section class="section">
+  <div class="container prose">
+    <p>${esc(company.name)} är personuppgiftsansvarig för de uppgifter du lämnar till oss via webbplatsen, telefon eller e-post.</p>
+    <h2>Vilka uppgifter vi samlar in</h2>
+    <p>När du använder kontaktformuläret sparar vi namn, e-postadress, telefonnummer (om du anger det) och ditt meddelande.</p>
+    <h2>Varför vi behandlar uppgifterna</h2>
+    <p>Vi använder uppgifterna för att besvara din förfrågan, lämna offert och utföra uppdrag. Den rättsliga grunden är vårt berättigade intresse av att besvara dig, eller att fullgöra ett avtal med dig.</p>
+    <h2>Hur länge vi sparar uppgifterna</h2>
+    <p>Förfrågningar som inte leder till uppdrag raderas senast efter 12 månader. Uppgifter som hör till ett uppdrag sparas så länge det krävs enligt lag, till exempel bokföringslagen.</p>
+    <h2>Vilka som får ta del av uppgifterna</h2>
+    <p>Formuläret hanteras av vår webbleverantör Netlify, som behandlar uppgifterna för vår räkning. Vi säljer aldrig dina uppgifter vidare.</p>
+    <h2>Cookies</h2>
+    <p>Webbplatsen använder inga cookies för spårning eller marknadsföring.</p>
+    <h2>Dina rättigheter</h2>
+    <p>Du har rätt att begära ut, rätta eller radera de uppgifter vi har om dig. Kontakta oss på <a href="mailto:${company.email}">${company.email}</a>. Du kan också lämna klagomål till Integritetsskyddsmyndigheten (IMY).</p>
   </div>
 </section>`,
 });
@@ -394,7 +449,36 @@ ${indexed.map((p) => `  <url><loc>${company.url}${p.path}</loc></url>`).join('\n
 </urlset>
 `,
 );
-fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${company.url}/sitemap.xml\n`);
+fs.writeFileSync(
+  path.join(OUT, 'robots.txt'),
+  isProduction ? `User-agent: *\nAllow: /\n\nSitemap: ${company.url}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n',
+);
+
+// Netlify: säkerhetshuvuden och cache.
+fs.writeFileSync(
+  path.join(OUT, '_headers'),
+  `/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+/css/*
+  Cache-Control: public, max-age=86400
+/img/*
+  Cache-Control: public, max-age=604800
+`,
+);
+
+// Netlify: gamla WordPress-adresser som inte finns längre.
+fs.writeFileSync(
+  path.join(OUT, '_redirects'),
+  `/start/            /                301
+/kontakt/          /kontakta-oss/   301
+/feed/*            /                301
+/wp-admin/*        /                301
+/wp-login.php      /                301
+`,
+);
 
 console.log(`Byggde ${pages.length} sidor till ${OUT}/`);
 

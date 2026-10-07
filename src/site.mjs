@@ -20,6 +20,33 @@ export const recruiting = {
   text: 'Just nu söker vi två elektriker. Hör av dig till Niklas eller Tony för mer information.',
 };
 
+// Bilder: förbered med `python3 scripts/bilder.py bilder-inkorg/x.jpg public/img/x.jpg`
+// och skriv in sökvägen här. Tomt värde = ingen bild.
+export const images = {
+  hero: '', // stor bild bakom rubriken på startsidan, t.ex. '/img/hero.jpg'
+  about: null, // bild på Om oss, t.ex. { src: '/img/personal.jpg', alt: 'Personalen framför lokalen' }
+};
+
+export const faq = [
+  {
+    q: 'Vilka områden arbetar ni i?',
+    a: 'Vi utgår från Skara och har kunder över hela Skaraborg med omnejd – bland annat i Skövde, Lidköping, Götene, Falköping och Vara.',
+  },
+  {
+    q: 'Arbetar ni åt både privatpersoner och företag?',
+    a: 'Ja. Våra kunder är allt från privatpersoner till fastighetsägare, butiker och större företag.',
+  },
+  {
+    q: 'Kan jag få ROT-avdrag?',
+    a: 'Ja. Som privatperson kan du få ROT-avdrag för arbetskostnaden när vi utför elarbeten i din bostad. Avdraget görs direkt på fakturan.',
+  },
+  {
+    q: 'Hur får jag en offert?',
+    a: 'Ring oss eller skriv till oss via <a href="/kontakta-oss/">kontaktformuläret</a>, så återkommer vi.',
+  },
+];
+
+// Varje tjänst kan få en bild: image: { src: '/img/fiber.jpg', alt: 'Fibersvetsning' }
 export const services = [
   {
     slug: 'elinstallation',
@@ -127,6 +154,7 @@ export const services = [
   },
 ];
 
+// Valfritt per person: role: 'VD', photo: '/img/personal/niklas.jpg'
 export const staff = [
   { name: 'Niklas Johansson', phone: '073-650 98 62', email: 'niklas@skarabygdensel.se' },
   { name: 'Tony Karlsson', phone: '073-650 98 61', email: 'tony@skarabygdensel.se' },
