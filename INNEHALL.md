@@ -28,8 +28,7 @@ läggs i `bilder-inkorg/`.
 ## Texter
 - [ ] Kort historik: när grundades företaget och av vem?
 - [ ] Något mer att berätta under varje tjänst (t.ex. laddboxar, solceller eller smarta hem, om ni gör det)
-- [ ] Referenser: några rader om vad ni gjort åt HSB, Jula, Blank Söner och SBB
-- [ ] Fler kunder eller projekt att visa?
+- [ ] Referenser: vilka kunder får vi nämna på sajten? (Kunderna ska ha godkänt det.)
 - [ ] Vitvaror: finns det en butik eller utställning man kan besöka?
 
 ## Bilder
@@ -37,4 +36,3 @@ läggs i `bilder-inkorg/`.
 - [ ] Gruppbild av personalen till Om oss
 - [ ] En bild per tjänst (elinstallation, tele/data/larm, service, vitvaror, fiber, termografi)
 - [ ] Porträtt av medarbetarna (valfritt – fråga var och en först)
-- [ ] Logotyper för fler referenskunder (fråga kunden om lov)

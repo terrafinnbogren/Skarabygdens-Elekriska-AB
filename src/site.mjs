@@ -174,10 +174,3 @@ export const staff = [
   { name: 'Sören Larsson', phone: '073-650 94 46', email: 'soren@skarabygdensel.se' },
   { name: 'Christoffer Lindqvist', phone: '073-650 98 45', email: 'christoffer@skarabygdensel.se' },
 ];
-
-export const references = [
-  { name: 'HSB', logo: '/img/referenser/hsb.png' },
-  { name: 'Jula', logo: '/img/referenser/jula.png' },
-  { name: 'Blank Söner', logo: '/img/referenser/blank-soner.png' },
-  { name: 'SBB', logo: '/img/referenser/sbb.jpg' },
-];

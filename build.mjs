@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
-import { company, recruiting, images, services, staff, references, faq } from './src/site.mjs';
+import { company, recruiting, images, services, staff, faq } from './src/site.mjs';
 
 const OUT = 'dist';
 
@@ -51,7 +51,6 @@ const icon = (name, cls = 'icon') =>
 const nav = [
   { href: '/', label: 'Start' },
   { href: '/tjanster/', label: 'Tjänster' },
-  { href: '/referenser/', label: 'Referenser' },
   { href: '/om-oss/', label: 'Om oss' },
   { href: '/kontakta-oss/', label: 'Kontakt' },
 ];
@@ -158,11 +157,6 @@ const serviceCards = () => `
     .join('')}
 </ul>`;
 
-const referenceLogos = () => `
-<ul class="logo-grid">
-  ${references.map((r) => `<li><img src="${r.logo}" alt="${esc(r.name)}" width="142" height="108" loading="lazy"></li>`).join('')}
-</ul>`;
-
 const ctaBand = (heading = 'Behöver du en elektriker?') => `
 <section class="cta-band">
   <div class="container cta-inner">
@@ -254,15 +248,6 @@ ${
     </div>
   </div>
 </section>
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Några av våra kunder</h2>
-      <p><a href="/referenser/">Se fler referenser</a></p>
-    </div>
-    ${referenceLogos()}
-  </div>
-</section>
 ${ctaBand()}`,
 });
 
@@ -301,18 +286,6 @@ ${pageHeader(s.title, s.summary)}
 </section>`,
   });
 }
-
-pages.push({
-  path: '/referenser/',
-  title: 'Referenser',
-  description: `Några av de företag och organisationer som anlitat ${company.shortName}.`,
-  body: `
-${pageHeader('Referenser', 'Våra kunder är allt från privatpersoner till större företag. Här är några av dem.')}
-<section class="section">
-  <div class="container">${referenceLogos()}</div>
-</section>
-${ctaBand('Vill du också bli kund?')}`,
-});
 
 pages.push({
   path: '/om-oss/',
@@ -474,6 +447,7 @@ fs.writeFileSync(
   path.join(OUT, '_redirects'),
   `/start/            /                301
 /kontakt/          /kontakta-oss/   301
+/referenser/       /                301
 /feed/*            /                301
 /wp-admin/*        /                301
 /wp-login.php      /                301
