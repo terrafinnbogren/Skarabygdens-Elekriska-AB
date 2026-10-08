@@ -6,7 +6,7 @@ Node-skript utan externa paket.
 
 ## Ändra innehåll
 
-- **Texter, telefonnummer, medarbetare, tjänster och referenser:** `src/site.mjs`
+- **Texter, telefonnummer, medarbetare, tjänster och vanliga frågor:** `src/site.mjs`
 - **Platsannonsen på startsidan:** sätt `recruiting.active` till `false` i `src/site.mjs`
 - **Utseende (färger, typsnitt):** `public/css/style.css`
 - **Sidmallar och sidornas uppbyggnad:** `build.mjs`
