@@ -24,6 +24,10 @@ Idé. Inget byggt.
 - En påminnelse skickas som sms med start månaden innan nästa åtgärd krävs.
 - Kunduppgifter (namn, telefonnummer, adresser) lagras i databasen, aldrig i
   repot.
+- Anpassad för telefon först. Personalen ska enkelt kunna registrera en
+  åtgärd ute hos kunden och fota direkt med telefonen.
+- Bilder kan bifogas till en utförd åtgärd. De förminskas vid uppladdning och
+  lagras på servern, inte i repot, och ingår i säkerhetskopiorna.
 
 ## Öppna frågor
 
@@ -33,7 +37,10 @@ Idé. Inget byggt.
 - Vilka uppgifter behövs per avtal? Förslag: kund, anläggning och adress,
   kontaktperson, objekt (t.ex. UPS-modell och batterier), åtgärder med
   intervall, avtalstid.
-- Ska rapporter (t.ex. från termografering) kunna bifogas till en åtgärd?
+- Vilka filer förutom bilder ska kunna bifogas – t.ex. PDF-rapporter från
+  termografering eller mätprotokoll?
+- Räcker det att öppna sidan i webbläsaren, eller ska den kunna läggas som en
+  ikon på telefonens hemskärm (fungerar utan app från App Store)?
 - Vilka kollegor ska ha åtkomst – alla, eller bara vissa?
 - Använder ni redan ett affärs- eller arbetsordersystem? Har det serviceavtal
   och påminnelser kan det vara bättre att använda eller koppla mot det än att
