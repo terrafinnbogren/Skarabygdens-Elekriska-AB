@@ -26,6 +26,7 @@ Idé. Inget byggt.
   repot.
 - Anpassad för telefon först. Personalen ska enkelt kunna registrera en
   åtgärd ute hos kunden och fota direkt med telefonen.
+- Användarna har olika behörighetsnivåer.
 - Bilder kan bifogas till en utförd åtgärd. De förminskas vid uppladdning och
   lagras på servern, inte i repot, och ingår i säkerhetskopiorna.
 
@@ -41,7 +42,13 @@ Idé. Inget byggt.
   termografering eller mätprotokoll?
 - Räcker det att öppna sidan i webbläsaren, eller ska den kunna läggas som en
   ikon på telefonens hemskärm (fungerar utan app från App Store)?
-- Vilka kollegor ska ha åtkomst – alla, eller bara vissa?
+- Vilka behörighetsnivåer behövs, och vem ska ha vilken? Förslag:
+  - Administratör: allt, även att lägga till användare och ändra behörigheter.
+  - Arbetsledare: lägger in, ändrar och avslutar avtal och kunder.
+  - Tekniker: ser avtalen och registrerar utförda åtgärder med bilder, men
+    kan inte ändra eller ta bort avtal.
+- Ska en tekniker se alla kunder, eller bara de avtal hen är ansvarig för?
+- Gäller samma nivåer för övriga interna funktioner (`../admin/`)?
 - Använder ni redan ett affärs- eller arbetsordersystem? Har det serviceavtal
   och påminnelser kan det vara bättre att använda eller koppla mot det än att
   bygga ett eget.
