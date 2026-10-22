@@ -27,7 +27,9 @@ natverk-och-sakerhet/       Nätverk och säkerhet
   natverk/                  Nätverk                   → /teledatalarm/
     unifi/                  UniFi-nätverk
   larm-och-passage/         Larm och passage          → /teledatalarm/
+    unifi-access/           UniFi Access
   kamera/                   Kamera
+    unifi-protect/          UniFi Protect
 energi/                     Energi
   elmatning/                Elmätning
   energilosningar/          Energilösningar

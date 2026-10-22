@@ -22,6 +22,15 @@ Enligt företaget (oktober 2026):
 - Kabeldragning.
 - Felsökning och mätning.
 - Felsöker även nätverk som någon annan har installerat.
+- Kunderna är både privatpersoner och företag.
+- Fjärrövervakning och serviceavtal efter installationen kan ordnas efter
+  överenskommelse, antingen av företaget självt eller genom en
+  samarbetspartner. Det diskuteras innan arbetet börjar och beror på vilken
+  säkerhetsnivå kunden vill ha. Företaget har ett brett kontaktnät bland
+  företag som är inriktade på detta.
+- Arbetar även med UniFis kameror (UniFi Protect) och passersystem
+  (UniFi Access) – se Hör ihop med.
+- Hjälper till att ta fram speciallösningar där det krävs.
 
 ## Bakgrund
 
@@ -34,17 +43,9 @@ användaren innan något av det används på hemsidan.
   och ändringar kan göras utan besök på plats.
 - Accesspunkter och kameror får ofta ström via nätverkskabeln (PoE), så det
   räcker med en kabel till varje enhet.
-- I samma serie finns även kameror (UniFi Protect) och passersystem
-  (UniFi Access).
-
-## Öppna frågor
-
-- Erbjuder ni fjärrövervakning eller ett serviceavtal efter installationen?
-- Privatpersoner, företag eller båda?
-- Arbetar ni även med UniFis kameror (Protect) eller passersystem (Access)?
 
 ## Hör ihop med
 
-- `../../kamera/` – kameror, om UniFi Protect används.
-- `../../larm-och-passage/` – passersystem, om UniFi Access används.
+- `../../kamera/unifi-protect/` – UniFis kameror.
+- `../../larm-och-passage/unifi-access/` – UniFis passersystem.
 - `../../fiber/` – fiberanslutning in till nätverket.

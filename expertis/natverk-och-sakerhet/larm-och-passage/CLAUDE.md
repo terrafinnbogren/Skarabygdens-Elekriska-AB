@@ -8,6 +8,10 @@
 
 Larm, passerkontroll och porttelefoner.
 
+## Underkategorier
+
+- `unifi-access/` – UniFi Access: Passersystem med UniFi Access (Ubiquiti).
+
 ## På hemsidan
 
 Sidan `/teledatalarm/ (tillsammans med nätverk)`. Texten finns i `hemsida/src/site.mjs`.
@@ -19,8 +23,12 @@ Från den tidigare hemsidan:
 - Passerkontroll- och porttelefonanläggningar.
 - Larmanläggningar.
 
+Enligt företaget (oktober 2026):
+
+- Arbetar med UniFi Access (se `unifi-access/`).
+
 ## Öppna frågor
 
 - Vilka typer av larm (inbrott, brand, trygghet)? Finns certifieringar för larm?
-- Vilka fabrikat eller system arbetar ni med?
+- Vilka fabrikat eller system arbetar ni med förutom UniFi Access?
 - Gör ni även uppdrag åt privatpersoner?

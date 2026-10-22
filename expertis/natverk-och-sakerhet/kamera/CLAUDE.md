@@ -8,6 +8,10 @@
 
 Kameralösningar för övervakning.
 
+## Underkategorier
+
+- `unifi-protect/` – UniFi Protect: Kamerabevakning med UniFi Protect (Ubiquiti).
+
 ## På hemsidan
 
 Har ingen egen sida på hemsidan än.
@@ -17,6 +21,7 @@ Har ingen egen sida på hemsidan än.
 Enligt företaget (oktober 2026):
 
 - Levererar kameralösningar.
+- Arbetar med UniFi Protect (se `unifi-protect/`).
 
 ## Bakgrund
 
@@ -27,6 +32,6 @@ användaren innan något av det används på hemsidan.
 
 ## Öppna frågor
 
-- Vilka fabrikat arbetar ni med?
+- Vilka fabrikat arbetar ni med förutom UniFi?
 - Privatpersoner, företag eller båda?
 - Inspelning lokalt, i molnet, eller båda? Åtkomst via app?

@@ -14,3 +14,9 @@ Fiber, nätverk, larm, passersystem och kameror.
 - `natverk/` – Nätverk: Tele- och datanät och kompletta nätverkslösningar.
 - `larm-och-passage/` – Larm och passage: Larm, passerkontroll och porttelefoner.
 - `kamera/` – Kamera: Kameralösningar för övervakning.
+
+## Bekräftade fakta
+
+Enligt företaget (oktober 2026):
+
+- Hjälper till att ta fram speciallösningar där det krävs.
