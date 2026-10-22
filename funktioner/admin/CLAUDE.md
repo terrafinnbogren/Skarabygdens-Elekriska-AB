@@ -18,6 +18,9 @@ Idé. Inget byggt.
   sektion per funktion.
 - Bara personal med eget konto får logga in. Inga delade lösenord.
 - Det ska gå att se vem som ändrade vad och när.
+- Användarna har olika behörighetsnivåer. Administratör eller projektledare
+  bestämmer vem som har tillgång till vad (se nivåerna i
+  `../serviceavtal/`).
 - Cheferna har behörighet att lägga in, ändra och ta bort erbjudanden,
   kampanjer och annonser (`../erbjudanden/`).
 
@@ -36,5 +39,5 @@ Inga än.
 
 ## Beroenden
 
-- `../erbjudanden/`, `../uthyrning/` – det som redigeras här.
+- `../erbjudanden/`, `../uthyrning/`, `../serviceavtal/` – det som redigeras här.
 - `../../drift/` – hosting, databas, säkerhetskopior.
