@@ -18,13 +18,16 @@ Idé. Inget byggt.
   sektion per funktion.
 - Bara personal med eget konto får logga in. Inga delade lösenord.
 - Det ska gå att se vem som ändrade vad och när.
+- Cheferna har behörighet att lägga in, ändra och ta bort erbjudanden,
+  kampanjer och annonser (`../erbjudanden/`).
 
 ## Öppna frågor
 
 - Var körs den: Netlify-funktioner eller VPS? (`../../drift/`)
 - Hur loggar personalen in – e-post och lösenord, engångskod via e-post, eller
   inloggning med företagets befintliga konton (t.ex. Microsoft eller Google)?
-- Vilka i personalen ska ha åtkomst, och ska några bara få se men inte ändra?
+- Vilka chefer ska ha konton? Ska fler än cheferna ha åtkomst, och ska några
+  bara få se men inte ändra?
 - Adress: förslag `skarabygdensel.se/admin` eller en egen underdomän.
 
 ## Filer

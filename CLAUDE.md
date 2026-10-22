@@ -12,7 +12,7 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | Mapp | Innehåll | Status |
 |------|----------|--------|
 | `hemsida/` | Den publika sajten (HTML/CSS, byggskript, bilder) | Byggd, på Netlify-testlänk |
-| `funktioner/erbjudanden/` | Personalen lägger ut erbjudanden på sajten | Idé |
+| `funktioner/erbjudanden/` | Cheferna lägger ut erbjudanden, kampanjer och tidsbegränsade annonser | Idé |
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
 | `funktioner/betalning/` | Betalning på sajten | Parkerad |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |

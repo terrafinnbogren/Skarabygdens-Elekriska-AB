@@ -5,8 +5,8 @@
 
 ## Syfte
 
-Personalen ska enkelt kunna lägga ut, ändra och ta bort erbjudanden som visas
-på hemsidan – utan att röra kod.
+Cheferna ska enkelt kunna lägga ut, ändra och ta bort erbjudanden, kampanjer
+och tidsbegränsade annonser som visas på hemsidan – utan att röra kod.
 
 ## Status
 
@@ -14,8 +14,15 @@ Idé. Inget byggt.
 
 ## Beslut
 
-- Erbjudanden hanteras via adminsidan (`../admin/`), inte genom att ändra
-  `hemsida/src/site.mjs`.
+- Cheferna lägger in erbjudanden, kampanjer och annonser via adminsidan
+  (`../admin/`), inte genom att ändra `hemsida/src/site.mjs`.
+- Varje inlägg har ett startdatum och antingen ett slutdatum eller "tills
+  vidare":
+  - Med slutdatum försvinner inlägget automatiskt från sajten när
+    slutdatumet har passerat.
+  - Tills vidare ligger inlägget kvar tills någon tar bort det.
+- Att inlägg försvinner ska inte kräva att någon gör något: sajten visar bara
+  det som är giltigt just den dagen.
 - Hemsidan ska fungera även om erbjudandena inte går att hämta – då visas
   sektionen inte.
 - Föreslagen ordning: detta är den första funktionen som byggs, eftersom den
@@ -25,11 +32,13 @@ Idé. Inget byggt.
 
 ## Öppna frågor
 
-- Vilka fält har ett erbjudande? Förslag: rubrik, text, bild, pris
-  (inklusive moms), giltig från/till.
+- Är kampanjer och annonser samma sak som erbjudanden, eller en egen typ –
+  t.ex. en banner överst på sajten med ett kort meddelande?
+- Vilka fält har ett inlägg? Förslag: rubrik, text, bild, pris (inklusive
+  moms), startdatum, slutdatum eller tills vidare.
 - Var på sajten visas de – egen sida, startsidan eller båda?
-- Försvinner ett erbjudande automatiskt när det gått ut?
-- Vem får publicera?
+- Ska platsannonsen på startsidan (`recruiting` i `hemsida/src/site.mjs`)
+  flyttas hit, så att den också kan få ett slutdatum?
 
 ## Filer
 
