@@ -43,6 +43,9 @@ uppdrag/                    Uppdrag (gäller alla områden)
 `→` visar vilken sida på hemsidan området hör till. Områden utan pil har ingen
 egen sida än.
 
+Det som gäller alla områden – bland annat att kunden kan få el, data, fiber
+med mera från samma företag – står i `uppdrag/CLAUDE.md`.
+
 ## Så är filerna uppbyggda
 
 - **Bekräftade fakta** – med källa: den tidigare hemsidan, eller uppgift från
