@@ -16,6 +16,7 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
 | `funktioner/betalning/` | Betalning på sajten | Parkerad |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |
+| `expertis/` | En mapp per område (el, tele/data/larm, service, vitvaror, fiber, termografi, drönare) med fakta om området | Faktaunderlag |
 | `drift/` | Hosting, domän, DNS, e-post, servrar, konton, säkerhet | Pågår |
 
 ## Mapparna under `funktioner/`
@@ -25,6 +26,13 @@ att jobba på just den delen. Det gäller även deras `CLAUDE.md`: ändra inte,
 bygg inget utifrån dem och föreslå inte att börja på dem som en del av annat
 arbete. Dyker något upp i annat arbete som berör en sådan del, nämn det för
 användaren istället för att ändra i mappen.
+
+## Mapparna under `expertis/`
+
+Varje område har en `CLAUDE.md` med bekräftade fakta och öppna frågor. Ändra
+dem bara när användaren uttryckligen ber om att jobba på just det området.
+När hemsidans text om ett område skrivs eller ändras får den mappen läsas som
+faktakälla – och står något inte där, hittas det inte på.
 
 ## Gemensamma regler
 

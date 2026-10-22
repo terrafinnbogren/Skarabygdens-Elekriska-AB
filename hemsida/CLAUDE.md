@@ -48,6 +48,8 @@ Kör alltid `build` och `check` innan du pushar. GitHub Actions kör samma sak.
   uppdateras och samtycke inhämtas. YouTube bäddas in så att filmen laddas
   först vid klick.
 - Kontaktformuläret går via Netlify Forms.
+- Fakta om tjänsterna hämtas från `../expertis/<område>/CLAUDE.md`. Står något
+  inte där, skrivs det inte på sajten.
 - Referenser och kundlogotyper är borttagna tills kunderna har godkänt.
 - Bilder: originalen läggs i `bilder-inkorg/`, webbversionerna (max 1600 px,
   JPEG) i `public/img/`. Filmer läggs inte i repot – korta bakgrundsklipp
