@@ -6,7 +6,7 @@ skarabygdensel.se och, efter hand, interna verktyg för personalen.
 | Mapp | Innehåll |
 |------|----------|
 | [`hemsida/`](hemsida/) | Den publika sajten – se [`hemsida/README.md`](hemsida/README.md) |
-| [`funktioner/`](funktioner/) | Kommande funktioner: erbjudanden, uthyrning, admin |
+| [`funktioner/`](funktioner/) | Kommande funktioner: erbjudanden, uthyrning, admin och (parkerad) betalning |
 | [`drift/`](drift/) | Hosting, domän, DNS, e-post och konton |
 
 Varje mapp har en `CLAUDE.md` med syfte, nuläge, beslut och öppna frågor för

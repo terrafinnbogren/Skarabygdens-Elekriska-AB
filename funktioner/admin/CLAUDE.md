@@ -1,5 +1,8 @@
 # Admin
 
+> Arbeta bara i den här mappen när användaren uttryckligen ber om att jobba på
+> just den här delen. Se "Mapparna under `funktioner/`" i rotens `CLAUDE.md`.
+
 ## Syfte
 
 En inloggad sida där personalen hanterar innehåll som ändras ofta –

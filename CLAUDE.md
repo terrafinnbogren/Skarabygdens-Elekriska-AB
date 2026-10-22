@@ -14,8 +14,17 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | `hemsida/` | Den publika sajten (HTML/CSS, byggskript, bilder) | Byggd, på Netlify-testlänk |
 | `funktioner/erbjudanden/` | Personalen lägger ut erbjudanden på sajten | Idé |
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
+| `funktioner/betalning/` | Betalning på sajten | Parkerad |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |
 | `drift/` | Hosting, domän, DNS, e-post, servrar, konton, säkerhet | Pågår |
+
+## Mapparna under `funktioner/`
+
+Rör inte mapparna under `funktioner/` om inte användaren uttryckligen ber om
+att jobba på just den delen. Det gäller även deras `CLAUDE.md`: ändra inte,
+bygg inget utifrån dem och föreslå inte att börja på dem som en del av annat
+arbete. Dyker något upp i annat arbete som berör en sådan del, nämn det för
+användaren istället för att ändra i mappen.
 
 ## Gemensamma regler
 
@@ -26,8 +35,8 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
   `hemsida/INNEHALL.md`.
 - Kundnamn och logotyper visas bara när kunden har godkänt det.
 - Ingen betalning eller bokning på sajten i dagsläget. Den som vill hyra
-  eller köpa något kontaktar företaget. Bygg inga betalfunktioner utan ett
-  nytt beslut.
+  eller köpa något kontaktar företaget. Betalning är parkerad i
+  `funktioner/betalning/`.
 - Inga lösenord, API-nycklar eller andra hemligheter i repot. De läggs som
   miljövariabler hos Netlify eller på servern.
 - Inga personuppgifter om kunder i repot. Allt som samlar in personuppgifter
@@ -38,7 +47,8 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 - Arbetsflöde: ändring på en gren → pull request → Netlify ger en testlänk →
   sammanfogas till `main` → publiceras automatiskt.
 - När ett beslut fattas eller en fråga besvaras: uppdatera den berörda delens
-  `CLAUDE.md` i samma ändring.
+  `CLAUDE.md` i samma ändring – för `funktioner/` bara när användaren arbetar
+  med den delen.
 
 ## Ny del
 

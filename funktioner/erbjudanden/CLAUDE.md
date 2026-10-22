@@ -1,5 +1,8 @@
 # Erbjudanden
 
+> Arbeta bara i den här mappen när användaren uttryckligen ber om att jobba på
+> just den här delen. Se "Mapparna under `funktioner/`" i rotens `CLAUDE.md`.
+
 ## Syfte
 
 Personalen ska enkelt kunna lägga ut, ändra och ta bort erbjudanden som visas
