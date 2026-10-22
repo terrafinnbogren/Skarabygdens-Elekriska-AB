@@ -40,6 +40,7 @@ vitvaror/                   Vitvaror                  → /vitvaror/
 uppdrag/                    Uppdrag (gäller alla områden)
   projektering/             Projektering
   offerter/                 Offerter
+  serviceavtal/             Serviceavtal
 ```
 
 `→` visar vilken sida på hemsidan området hör till. Områden utan pil har ingen

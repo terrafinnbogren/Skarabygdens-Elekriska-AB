@@ -6,12 +6,14 @@
 
 ## Syfte
 
-Hur ett uppdrag går till, oavsett område: projektering och offerter.
+Hur ett uppdrag går till, oavsett område: projektering, offerter och
+serviceavtal.
 
 ## Underkategorier
 
 - `projektering/` – Projektering: Planering av installationer innan arbetet börjar.
 - `offerter/` – Offerter: Hur kunder begär och får en offert.
+- `serviceavtal/` – Serviceavtal: Avtal om återkommande service och underhåll, oavsett område.
 
 ## Bekräftade fakta
 

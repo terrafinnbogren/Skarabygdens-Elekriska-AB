@@ -21,7 +21,11 @@ Från den tidigare hemsidan:
 - Felavhjälpning och statuskontroller.
 - Kontinuerligt underhåll och snabb service; lokal närvaro.
 
+Enligt företaget (oktober 2026):
+
+- Erbjuder serviceavtal som förhandlas fram med kunden (se
+  `../../uppdrag/serviceavtal/`).
+
 ## Öppna frågor
 
-- Finns serviceavtal?
 - Jour eller akuta utryckningar – och i så fall vilka tider?

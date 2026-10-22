@@ -17,6 +17,8 @@ Har ingen egen sida på hemsidan än.
 Enligt företaget (oktober 2026):
 
 - Byter batterier i UPS-anläggningar.
+- Batteribyte kan ingå i ett serviceavtal som förhandlas fram med kunden
+  (se `../../uppdrag/serviceavtal/`).
 
 ## Bakgrund
 
@@ -30,8 +32,9 @@ användaren innan något av det används på hemsidan.
 
 - Vilka fabrikat och storlekar av UPS arbetar ni med?
 - Tar ni hand om de gamla batterierna?
-- Erbjuds avtal med regelbunden test och byte?
+- Kan avtalet även omfatta regelbunden batteritest?
 
 ## Hör ihop med
 
 - `../../matning-och-kontroll/ups-batteritest/`
+- `../../uppdrag/serviceavtal/`
