@@ -1,3 +1,4 @@
+# Den publika hemsidan ligger i hemsida/. Se hemsida/CLAUDE.md.
 [build]
-  command = "node build.mjs"
-  publish = "dist"
+  command = "cd hemsida && node build.mjs"
+  publish = "hemsida/dist"
