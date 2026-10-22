@@ -24,8 +24,17 @@ Från den tidigare hemsidan:
 - Används för att förebygga och hitta fel innan de får allvarliga konsekvenser.
 - Exempel: solcellsanläggningar (drönaröverflygning), växelriktare och batterilager, elcentraler, ställverk, transformatorer och apparatskåp, frostskyddskablar och värmeslingor, lufthängda kraftledningar.
 
+Enligt företaget (oktober 2026):
+
+- Termografering kan ingå i ett serviceavtal, t.ex. en gång om året, så att
+  företaget håller koll åt kunden (se `../../uppdrag/serviceavtal/`).
+
 ## Öppna frågor
 
 - Är någon certifierad termograför?
 - Lämnar ni rapport efter termografering, och hur ser den ut?
 - Termograferar ni även byggnader (värmeläckage), eller bara elanläggningar?
+
+## Hör ihop med
+
+- `../../uppdrag/serviceavtal/`

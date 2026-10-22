@@ -52,7 +52,9 @@ konton, säkerhetskopior och säkerhet.
 - Var ligger e-posten?
 - Flytta GitHub-repot och Netlify-projektet till konton som ägs av företaget,
   med mer än en administratör.
-- VPS eller Netlify-funktioner för de interna verktygen?
+- VPS eller Netlify-funktioner för de interna verktygen? Serviceavtal
+  (`../funktioner/serviceavtal/`) behöver en databas med kunduppgifter, en
+  daglig schemalagd körning och sms, vilket talar för en VPS.
 
 ## Beroenden
 
