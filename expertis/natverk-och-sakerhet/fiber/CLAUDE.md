@@ -2,18 +2,15 @@
 
 > Ändra bara i den här mappen när användaren uttryckligen ber om att jobba på
 > just det här området. När hemsidans text om området ändras får filen läsas
-> som faktakälla. Se "Mapparna under `expertis/`" i rotens `CLAUDE.md`.
+> som faktakälla. Se `../../CLAUDE.md` (expertis) och rotens `CLAUDE.md`.
 
 ## Syfte
 
 Fiberinstallation, svetsning, mätning och projektering.
 
-Mappen samlar fakta om området, som underlag för texter på hemsidan,
-erbjudanden och annat som rör området.
-
 ## På hemsidan
 
-Sidan `/fiber/` på hemsidan. Texten finns i `hemsida/src/site.mjs`.
+Sidan `/fiber/`. Texten finns i `hemsida/src/site.mjs`.
 
 ## Bekräftade fakta
 

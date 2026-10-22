@@ -16,7 +16,7 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
 | `funktioner/betalning/` | Betalning på sajten | Parkerad |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |
-| `expertis/` | En mapp per område (el, tele/data/larm, service, vitvaror, fiber, termografi, drönare) med fakta om området | Faktaunderlag |
+| `expertis/` | Fakta per område i ett träd: el, mätning och kontroll, nätverk och säkerhet, smarta hem, vitvaror, uppdrag. Se `expertis/CLAUDE.md` | Faktaunderlag |
 | `drift/` | Hosting, domän, DNS, e-post, servrar, konton, säkerhet | Pågår |
 
 ## Mapparna under `funktioner/`
@@ -29,8 +29,8 @@ användaren istället för att ändra i mappen.
 
 ## Mapparna under `expertis/`
 
-Varje område har en `CLAUDE.md` med bekräftade fakta och öppna frågor. Ändra
-dem bara när användaren uttryckligen ber om att jobba på just det området.
+Varje område har en `CLAUDE.md` med bekräftade fakta och öppna frågor, och
+`expertis/CLAUDE.md` visar hela trädet. Ändra dem bara när användaren uttryckligen ber om att jobba på just det området.
 När hemsidans text om ett område skrivs eller ändras får den mappen läsas som
 faktakälla – och står något inte där, hittas det inte på.
 

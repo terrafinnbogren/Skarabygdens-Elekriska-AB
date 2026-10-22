@@ -2,18 +2,15 @@
 
 > Ändra bara i den här mappen när användaren uttryckligen ber om att jobba på
 > just det här området. När hemsidans text om området ändras får filen läsas
-> som faktakälla. Se "Mapparna under `expertis/`" i rotens `CLAUDE.md`.
+> som faktakälla. Se `../CLAUDE.md` (expertis) och rotens `CLAUDE.md`.
 
 ## Syfte
 
 Försäljning av vitvaror.
 
-Mappen samlar fakta om området, som underlag för texter på hemsidan,
-erbjudanden och annat som rör området.
-
 ## På hemsidan
 
-Sidan `/vitvaror/` på hemsidan. Texten finns i `hemsida/src/site.mjs`.
+Sidan `/vitvaror/`. Texten finns i `hemsida/src/site.mjs`.
 
 ## Bekräftade fakta
 
