@@ -17,6 +17,8 @@ Idé. Inget byggt.
   sektionen inte.
 - Föreslagen ordning: detta är den första funktionen som byggs, eftersom den
   är enklast.
+- Erbjudanden köps inte på sajten. Den som är intresserad kontaktar företaget,
+  så varje erbjudande har en tydlig väg till kontakt (telefon och formulär).
 
 ## Öppna frågor
 
@@ -25,7 +27,6 @@ Idé. Inget byggt.
 - Var på sajten visas de – egen sida, startsidan eller båda?
 - Försvinner ett erbjudande automatiskt när det gått ut?
 - Vem får publicera?
-- Ska erbjudanden kunna köpas direkt på sajten? I så fall: `../betalning/`.
 
 ## Filer
 

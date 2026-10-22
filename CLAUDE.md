@@ -14,7 +14,6 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | `hemsida/` | Den publika sajten (HTML/CSS, byggskript, bilder) | Byggd, på Netlify-testlänk |
 | `funktioner/erbjudanden/` | Personalen lägger ut erbjudanden på sajten | Idé |
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
-| `funktioner/betalning/` | Betalning på sajten | Idé |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |
 | `drift/` | Hosting, domän, DNS, e-post, servrar, konton, säkerhet | Pågår |
 
@@ -26,6 +25,9 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
   priser, årtal). Saknas något: fråga, eller lägg frågan i
   `hemsida/INNEHALL.md`.
 - Kundnamn och logotyper visas bara när kunden har godkänt det.
+- Ingen betalning eller bokning på sajten i dagsläget. Den som vill hyra
+  eller köpa något kontaktar företaget. Bygg inga betalfunktioner utan ett
+  nytt beslut.
 - Inga lösenord, API-nycklar eller andra hemligheter i repot. De läggs som
   miljövariabler hos Netlify eller på servern.
 - Inga personuppgifter om kunder i repot. Allt som samlar in personuppgifter

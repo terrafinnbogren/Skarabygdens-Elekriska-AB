@@ -2,7 +2,8 @@
 
 ## Syfte
 
-Hyra ut byggcentraler, verktyg och annan utrustning till kunder via hemsidan.
+Visa vilka byggcentraler, verktyg och annan utrustning som går att hyra, så
+att kunder hör av sig.
 
 ## Status
 
@@ -10,25 +11,22 @@ Idé. Inget byggt.
 
 ## Beslut
 
-Byggs i två steg:
-
-1. **Lista och förfrågan.** Varje objekt visas med bild, beskrivning, pris och
-   status (ledig/uthyrd). Kunden skickar en förfrågan via formulär, och
-   personalen bekräftar manuellt. Status ändras i adminsidan.
-2. **Bokning** (senare, om behovet finns). Kalender med lediga datum, bokning
-   direkt på sajten och eventuellt betalning (`../betalning/`).
-
-I början rekommenderas betalning vid hämtning eller faktura – enklare vid
-skador och deposition.
+- Ingen bokning och ingen betalning på sajten. För att hyra krävs kontakt med
+  personalen, som bekräftar, gör upp villkor och tar betalt utanför sajten.
+- Sajten visar varje objekt med bild, beskrivning och status (ledig/uthyrd),
+  och en tydlig väg till kontakt: telefon och ett förfrågningsformulär där
+  kunden kan ange objekt och önskade datum.
+- Status ändras av personalen i adminsidan (`../admin/`).
 
 ## Öppna frågor
 
 - Vilka objekt hyrs ut, och hur många av varje?
-- Priser: per dygn, vecka? Inklusive moms för privatpersoner?
-- Deposition?
-- Hyresvillkor: ansvar vid skada eller förlust, hämtning och återlämning,
-  avbokning. Bör granskas av någon kunnig.
+- Ska priser visas, eller "pris på förfrågan"? Visas priser för privatpersoner
+  ska de vara inklusive moms.
 - Hyr ni ut till privatpersoner, företag eller båda?
+- Ska hyresvillkoren (skadeansvar, hämtning, återlämning) finnas på sajten,
+  eller bara lämnas vid kontakt?
+- Vem i personalen tar emot förfrågningarna?
 
 ## Filer
 
@@ -37,7 +35,6 @@ Inga än.
 ## Beroenden
 
 - `../admin/` – hantera objekt och status.
-- `../betalning/` – i steg 2.
 - `../../hemsida/` – där objekten visas. Formuläret samlar personuppgifter, så
   integritetspolicyn måste stämma.
 - `../../drift/` – lagring.
