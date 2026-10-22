@@ -21,6 +21,8 @@ konton, säkerhetskopior och säkerhet.
 - Den publika hemsidan ligger på Netlify.
 - Företaget äger plattformen och de interna verktygen. Ägaren av GitHub-repot
   (terrafinnbogren) sköter driften.
+- Inloggningar och nycklar sparas i Bitwarden, så att driften kan lämnas över.
+  Ingen reserv finns i dag.
 - Domänen flyttas inte – den pekas om med DNS hos nuvarande leverantör.
   Netlify DNS används inte, för att e-postposterna inte ska behöva byggas om.
 - Interna verktyg: Netlify-funktioner eller en egen VPS – inte beslutat.
@@ -54,6 +56,9 @@ konton, säkerhetskopior och säkerhet.
 - Var ligger e-posten?
 - Flytta GitHub-repot och Netlify-projektet till konton som ägs av företaget,
   med mer än en administratör.
+- Vem blir reserv för driften? Bitwardens funktion för nödåtkomst eller en
+  delad samling som ägs av företaget gör att någon annan kommer åt
+  uppgifterna om den driftansvarige inte är tillgänglig.
 - VPS eller Netlify-funktioner för de interna verktygen? Serviceavtal
   (`../funktioner/serviceavtal/`) behöver en databas med kunduppgifter, en
   daglig schemalagd körning och sms, vilket talar för en VPS.

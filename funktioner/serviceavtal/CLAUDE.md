@@ -23,6 +23,8 @@ Idé. Inget byggt.
   koll på dem.
 - Företaget äger systemet. Ägaren av GitHub-repot (terrafinnbogren) sköter
   det.
+- En kund har samma kundnummer som i Entré Office. Kundnumret och
+  uppgifterna anges när kunden skapas här.
 - Personalen lägger in avtal och registrerar utförda åtgärder: vad som
   gjordes, när och av vem, med en anteckning.
 - Varje återkommande åtgärd har ett intervall (t.ex. varje år). Nästa datum
@@ -68,9 +70,7 @@ Idé. Inget byggt.
 - Är projektledare samma roll som arbetsledare, eller en egen nivå mellan
   administratör och arbetsledare?
 - Vem ska ha vilken nivå?
-- Ska kunderna kopplas till Entré Office, t.ex. med samma kundnummer, så att
-  registren inte glider isär?
-- Vem är reserv för driften?
+- Vem blir reserv för driften? Det finns ingen i dag (se `../../drift/`).
 - Vilken sms-tjänst? Förslag: en svensk leverantör med API, t.ex. 46elks.
   Kostar per skickat sms.
 - Var körs den: VPS eller Netlify-funktioner (`../../drift/`)? Det här är

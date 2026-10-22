@@ -19,6 +19,8 @@ Idé. Inget byggt.
 - Bara personal med eget konto får logga in. Inga delade lösenord.
 - Inloggningen hanteras i plattformen själv, inte via Microsoft- eller
   Google-konton, eftersom alla anställda inte har sådana.
+- Personalen loggar in med e-post och lösenord. Lösenorden lagras hashade med
+  Nodes inbyggda funktioner, aldrig i klartext.
 - Det ska gå att se vem som ändrade vad och när.
 - Användarna har olika behörighetsnivåer. Administratör eller projektledare
   bestämmer vem som har tillgång till vad (se nivåerna i
@@ -29,8 +31,9 @@ Idé. Inget byggt.
 ## Öppna frågor
 
 - Var körs den: Netlify-funktioner eller VPS? (`../../drift/`)
-- Hur loggar personalen in – e-post och lösenord, eller engångskod via sms
-  med "kom ihåg den här telefonen"? Se `../serviceavtal/ANALYS.md`.
+- Glömt lösenord: återställs det via en länk i e-post (kräver en
+  e-posttjänst som kan skicka från servern), eller av en administratör?
+- Ska tvåstegsverifiering krävas, åtminstone för administratörer?
 - Vilka chefer ska ha konton? Ska fler än cheferna ha åtkomst, och ska några
   bara få se men inte ändra?
 - Adress: förslag `skarabygdensel.se/admin` eller en egen underdomän.
