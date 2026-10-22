@@ -19,6 +19,8 @@ konton, säkerhetskopior och säkerhet.
 ## Beslut
 
 - Den publika hemsidan ligger på Netlify.
+- Företaget äger plattformen och de interna verktygen. Ägaren av GitHub-repot
+  (terrafinnbogren) sköter driften.
 - Domänen flyttas inte – den pekas om med DNS hos nuvarande leverantör.
   Netlify DNS används inte, för att e-postposterna inte ska behöva byggas om.
 - Interna verktyg: Netlify-funktioner eller en egen VPS – inte beslutat.

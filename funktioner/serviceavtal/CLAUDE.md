@@ -17,6 +17,12 @@ Idé. Inget byggt.
 
 ## Beslut
 
+- Byggs i plattformen, inte köps. Företaget har affärssystemet Entré Office,
+  men det här är en intern funktion för att hålla koll på kundernas
+  anläggningar, eftersom företagen ni arbetar åt i regel inte själva har
+  koll på dem.
+- Företaget äger systemet. Ägaren av GitHub-repot (terrafinnbogren) sköter
+  det.
 - Personalen lägger in avtal och registrerar utförda åtgärder: vad som
   gjordes, när och av vem, med en anteckning.
 - Varje återkommande åtgärd har ett intervall (t.ex. varje år). Nästa datum
@@ -62,9 +68,9 @@ Idé. Inget byggt.
 - Är projektledare samma roll som arbetsledare, eller en egen nivå mellan
   administratör och arbetsledare?
 - Vem ska ha vilken nivå?
-- Använder ni redan ett affärs- eller arbetsordersystem? Har det serviceavtal
-  och påminnelser kan det vara bättre att använda eller koppla mot det än att
-  bygga ett eget.
+- Ska kunderna kopplas till Entré Office, t.ex. med samma kundnummer, så att
+  registren inte glider isär?
+- Vem är reserv för driften?
 - Vilken sms-tjänst? Förslag: en svensk leverantör med API, t.ex. 46elks.
   Kostar per skickat sms.
 - Var körs den: VPS eller Netlify-funktioner (`../../drift/`)? Det här är

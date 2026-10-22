@@ -5,6 +5,10 @@ serviceavtal, admin, drift, erbjudanden, uthyrning och hemsida. Det är ett
 underlag för beslut, inget är bestämt. Produktnamn, priser och funktioner hos
 andra leverantörer måste kontrolleras innan de används.
 
+> Fattade beslut efter analysen (bygga själv, vem som sköter driften,
+> inloggning i plattformen) står i `CLAUDE.md` för serviceavtal, admin och
+> drift.
+
 ---
 
 ## 1. Bygga själv eller köpa?

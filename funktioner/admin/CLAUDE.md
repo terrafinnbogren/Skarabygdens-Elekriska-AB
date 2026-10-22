@@ -17,6 +17,8 @@ Idé. Inget byggt.
 - Gemensam för alla interna funktioner: en inloggning, en adminsida med en
   sektion per funktion.
 - Bara personal med eget konto får logga in. Inga delade lösenord.
+- Inloggningen hanteras i plattformen själv, inte via Microsoft- eller
+  Google-konton, eftersom alla anställda inte har sådana.
 - Det ska gå att se vem som ändrade vad och när.
 - Användarna har olika behörighetsnivåer. Administratör eller projektledare
   bestämmer vem som har tillgång till vad (se nivåerna i
@@ -27,8 +29,8 @@ Idé. Inget byggt.
 ## Öppna frågor
 
 - Var körs den: Netlify-funktioner eller VPS? (`../../drift/`)
-- Hur loggar personalen in – e-post och lösenord, engångskod via e-post, eller
-  inloggning med företagets befintliga konton (t.ex. Microsoft eller Google)?
+- Hur loggar personalen in – e-post och lösenord, eller engångskod via sms
+  med "kom ihåg den här telefonen"? Se `../serviceavtal/ANALYS.md`.
 - Vilka chefer ska ha konton? Ska fler än cheferna ha åtkomst, och ska några
   bara få se men inte ändra?
 - Adress: förslag `skarabygdensel.se/admin` eller en egen underdomän.
