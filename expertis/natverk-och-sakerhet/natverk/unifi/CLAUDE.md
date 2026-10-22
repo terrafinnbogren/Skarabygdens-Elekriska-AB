@@ -17,8 +17,11 @@ Har ingen egen sida på hemsidan än. Närmast är sidan `/teledatalarm/`.
 Enligt företaget (oktober 2026):
 
 - Arbetar med UniFi-nätverk.
-- Felsökning av UniFi-nätverk.
+- Installation av nya nätverk och utbyggnad av befintliga.
+- Konfiguration och wifi-planering.
 - Kabeldragning.
+- Felsökning och mätning.
+- Felsöker även nätverk som någon annan har installerat.
 
 ## Bakgrund
 
@@ -36,9 +39,6 @@ användaren innan något av det används på hemsidan.
 
 ## Öppna frågor
 
-- Vad mer ingår – installation av nya nätverk, konfiguration, wifi-planering,
-  utbyggnad av befintliga nätverk?
-- Felsöker ni även nätverk som någon annan har installerat?
 - Erbjuder ni fjärrövervakning eller ett serviceavtal efter installationen?
 - Privatpersoner, företag eller båda?
 - Arbetar ni även med UniFis kameror (Protect) eller passersystem (Access)?
