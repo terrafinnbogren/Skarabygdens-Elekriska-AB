@@ -27,6 +27,9 @@ natverk-och-sakerhet/       Nätverk och säkerhet
   natverk/                  Nätverk                   → /teledatalarm/
   larm-och-passage/         Larm och passage          → /teledatalarm/
   kamera/                   Kamera
+energi/                     Energi
+  elmatning/                Elmätning
+  energilosningar/          Energilösningar
 smarta-hem/                 Smarta hem
   shelly/                   Shelly
   plejd/                    Plejd

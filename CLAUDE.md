@@ -16,7 +16,7 @@ uppgiften gäller – inte alla. Behöver en uppgift flera delar, läs de berör
 | `funktioner/uthyrning/` | Uthyrning av byggcentraler, verktyg m.m. | Idé |
 | `funktioner/betalning/` | Betalning på sajten | Parkerad |
 | `funktioner/admin/` | Inloggning och adminsida för personalen | Idé |
-| `expertis/` | Fakta per område i ett träd: el, mätning och kontroll, nätverk och säkerhet, smarta hem, vitvaror, uppdrag. Se `expertis/CLAUDE.md` | Faktaunderlag |
+| `expertis/` | Fakta per område i ett träd: el, mätning och kontroll, nätverk och säkerhet, energi, smarta hem, vitvaror, uppdrag. Se `expertis/CLAUDE.md` | Faktaunderlag |
 | `drift/` | Hosting, domän, DNS, e-post, servrar, konton, säkerhet | Pågår |
 
 ## Mapparna under `funktioner/`
