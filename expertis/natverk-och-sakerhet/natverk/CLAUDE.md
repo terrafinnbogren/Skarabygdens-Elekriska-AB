@@ -8,6 +8,10 @@
 
 Tele- och datanät och kompletta nätverkslösningar.
 
+## Underkategorier
+
+- `unifi/` – UniFi-nätverk: Nätverk byggda med UniFi (Ubiquiti): felsökning, kabeldragning med mera.
+
 ## På hemsidan
 
 Sidan `/teledatalarm/ (tillsammans med larm och passage)`. Texten finns i `hemsida/src/site.mjs`.
@@ -22,10 +26,11 @@ Från den tidigare hemsidan:
 Enligt företaget (oktober 2026):
 
 - Levererar kompletta nätverkslösningar.
+- Arbetar med UniFi-nätverk, bland annat felsökning och kabeldragning (se `unifi/`).
 
 ## Öppna frågor
 
 - Vad ingår i en komplett nätverkslösning – kabeldragning, switchar, wifi, brandvägg, konfiguration?
-- Vilka fabrikat arbetar ni med?
+- Vilka fabrikat arbetar ni med förutom UniFi?
 - Privatpersoner, företag eller båda?
 - Ingår service och support efter installationen?

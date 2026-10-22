@@ -25,6 +25,7 @@ matning-och-kontroll/       Mätning och kontroll
 natverk-och-sakerhet/       Nätverk och säkerhet
   fiber/                    Fiber                     → /fiber/
   natverk/                  Nätverk                   → /teledatalarm/
+    unifi/                  UniFi-nätverk
   larm-och-passage/         Larm och passage          → /teledatalarm/
   kamera/                   Kamera
 energi/                     Energi
