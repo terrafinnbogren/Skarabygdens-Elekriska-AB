@@ -21,7 +21,16 @@ Idé. Inget byggt.
   gjordes, när och av vem, med en anteckning.
 - Varje återkommande åtgärd har ett intervall (t.ex. varje år). Nästa datum
   räknas fram från när åtgärden senast utfördes.
-- En påminnelse skickas som sms med start månaden innan nästa åtgärd krävs.
+- Påminnelser skickas som sms med start månaden innan nästa åtgärd krävs, och
+  fortsätter tills åtgärden är registrerad som utförd.
+- Tjänsten testas varje vecka så att det syns att den verkligen är igång. En
+  server som har stannat kan inte själv larma, så det kontrolleras på två
+  sätt:
+  - Ett veckosms till ansvarig, t.ex. på måndagar: hur många åtgärder som
+    förfaller den kommande månaden och hur många som är försenade. Uteblir
+    sms:et är något fel.
+  - En extern övervakningstjänst som regelbundet anropar servern och larmar om
+    den inte svarar eller om den dagliga kontrollen inte har körts.
 - Kunduppgifter (namn, telefonnummer, adresser) lagras i databasen, aldrig i
   repot.
 - Anpassad för telefon först. Personalen ska enkelt kunna registrera en
@@ -33,8 +42,9 @@ Idé. Inget byggt.
 ## Öppna frågor
 
 - Vem får sms:et – den ansvariga kollegan, kunden eller båda?
-- Ett sms, eller upprepade påminnelser (t.ex. varje vecka) tills åtgärden är
-  registrerad som utförd?
+- Hur ofta upprepas påminnelsen – varje vecka? Ska den gå oftare, eller även
+  till arbetsledaren, när åtgärden är försenad?
+- Vem får veckosms:et och larmen från övervakningen?
 - Vilka uppgifter behövs per avtal? Förslag: kund, anläggning och adress,
   kontaktperson, objekt (t.ex. UPS-modell och batterier), åtgärder med
   intervall, avtalstid.
