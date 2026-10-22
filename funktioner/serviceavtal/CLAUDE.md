@@ -78,7 +78,8 @@ Idé. Inget byggt.
 
 ## Filer
 
-Inga än.
+- `ANALYS.md` – bygga eller köpa, arkitektur, byggordning, drift, kostnader,
+  risker och beslut att fatta (oktober 2026).
 
 ## Beroenden
 
