@@ -19,6 +19,11 @@ Från den tidigare hemsidan:
 - Drönare med värmekamera används vid termografering.
 - Drönarpiloterna har certifiering för A1/A3 och A2.
 
+Enligt företaget (oktober 2026):
+
+- Drönare med värmekamera används också för att analysera hus och byggnader
+  och hitta värmeläckage.
+
 ## Öppna frågor
 
 - Erbjuder ni andra drönartjänster, t.ex. inspektion, foto eller film?

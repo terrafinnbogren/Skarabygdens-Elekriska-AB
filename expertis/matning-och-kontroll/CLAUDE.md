@@ -6,7 +6,8 @@
 
 ## Syfte
 
-Mätningar och kontroller av elanläggningar: Eurotest, UPS-batteritest och termografi.
+Mätningar och kontroller av elanläggningar och byggnader: Eurotest,
+UPS-batteritest och termografi.
 
 ## Underkategorier
 

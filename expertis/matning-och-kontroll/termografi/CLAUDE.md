@@ -28,12 +28,27 @@ Enligt företaget (oktober 2026):
 
 - Termografering kan ingå i ett serviceavtal, t.ex. en gång om året, så att
   företaget håller koll åt kunden (se `../../uppdrag/serviceavtal/`).
+- Termograferar även hus och byggnader med drönare med värmekamera, för att
+  hitta värmeläckage.
+
+## Bakgrund
+
+Allmän kunskap om området, inte uppgifter om företaget. Stäm av med
+användaren innan något av det används på hemsidan.
+
+- Värmeläckage syns bäst när det är stor skillnad mellan inne- och
+  utetemperatur, alltså under den kalla delen av året, och när solen inte
+  värmer fasaden – t.ex. på kvällen, natten eller en mulen dag.
+- Från drönare syns tak och fasader, även höga byggnader och svåråtkomliga
+  ställen. Läckage vid fönster, dörrar och anslutningar kan behöva
+  kompletteras med termografering inifrån.
 
 ## Öppna frågor
 
 - Är någon certifierad termograför?
 - Lämnar ni rapport efter termografering, och hur ser den ut?
-- Termograferar ni även byggnader (värmeläckage), eller bara elanläggningar?
+- Byggnadstermografi: privatpersoner, bostadsrättsföreningar, företag – eller
+  alla? Ingår en rapport med bilder och förklaring av fynden?
 
 ## Hör ihop med
 
