@@ -21,6 +21,9 @@ Idé. Inget byggt.
   Google-konton, eftersom alla anställda inte har sådana.
 - Personalen loggar in med e-post och lösenord. Lösenorden lagras hashade med
   Nodes inbyggda funktioner, aldrig i klartext.
+- Glömt lösenord återställs via en länk i e-post. Länken gäller en kort tid
+  och kan bara användas en gång.
+- Administratörer måste ha tvåstegsverifiering.
 - Det ska gå att se vem som ändrade vad och när.
 - Användarna har olika behörighetsnivåer. Administratör eller projektledare
   bestämmer vem som har tillgång till vad (se nivåerna i
@@ -31,9 +34,12 @@ Idé. Inget byggt.
 ## Öppna frågor
 
 - Var körs den: Netlify-funktioner eller VPS? (`../../drift/`)
-- Glömt lösenord: återställs det via en länk i e-post (kräver en
-  e-posttjänst som kan skicka från servern), eller av en administratör?
-- Ska tvåstegsverifiering krävas, åtminstone för administratörer?
+- Vilken e-posttjänst skickar återställningslänkarna? Den behöver kunna
+  skicka från servern, helst från en adress på skarabygdensel.se.
+- Tvåstegsverifiering: förslag är en kod från en autentiseringsapp (t.ex.
+  Bitwarden Authenticator, Microsoft eller Google Authenticator), som kan
+  byggas med Nodes inbyggda funktioner. Eller sms-kod? Ska fler än
+  administratörer kunna välja att slå på det?
 - Vilka chefer ska ha konton? Ska fler än cheferna ha åtkomst, och ska några
   bara få se men inte ändra?
 - Adress: förslag `skarabygdensel.se/admin` eller en egen underdomän.
