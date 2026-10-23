@@ -17,7 +17,8 @@ Det som återstår att ta fram inför lanseringen finns i `INNEHALL.md`.
 
 ## Bilder
 
-Lägg nya bilder i `bilder-inkorg/` (se `bilder-inkorg/LÄSMIG.md`). Förbered
+Originalen sparas i företagets molnmapp. Lägg bara de bilder som ska
+användas i `bilder-inkorg/` (se `bilder-inkorg/LÄSMIG.md`). Förbered
 dem för webben med
 
 ```sh

@@ -33,7 +33,7 @@ Kör alltid `build` och `check` innan du pushar. GitHub Actions kör samma sak.
 - `scripts/bilder.py` – förbereder bilder (skalar, tar bort metadata, sparar
   mått i `src/bilder.json`). Körs från `hemsida/`.
 - `scripts/check.mjs` – kontrollerna bakom `npm run check`.
-- `bilder-inkorg/` – originalbilder från personalen, innan de förbereds.
+- `bilder-inkorg/` – tillfällig plats för utvalda bilder, innan de förbereds.
 - `INNEHALL.md` – checklista över innehåll och fakta som ska tas fram.
 
 ## Beslut
@@ -52,8 +52,10 @@ Kör alltid `build` och `check` innan du pushar. GitHub Actions kör samma sak.
   `../expertis/CLAUDE.md` visar vilken mapp som hör till vilken sida. Står
   något inte där, skrivs det inte på sajten.
 - Referenser och kundlogotyper är borttagna tills kunderna har godkänt.
-- Bilder: originalen läggs i `bilder-inkorg/`, webbversionerna (max 1600 px,
-  JPEG) i `public/img/`. Filmer läggs inte i repot – korta bakgrundsklipp
+- Bilder: originalen sparas i företagets molnmapp, inte i repot. Bara de
+  bilder som ska användas på sajten läggs tillfälligt i `bilder-inkorg/`.
+  Webbversionerna (max 1600 px, JPEG, utan metadata) läggs i `public/img/`
+  och originalen tas sedan bort ur `bilder-inkorg/`. Filmer läggs inte i repot – korta bakgrundsklipp
   komprimeras till under ca 10 MB, längre filmer läggs på YouTube.
 - Mobil först: kontrollera att inga sidor får sidledsscroll på mobil.
 
